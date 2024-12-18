@@ -13,12 +13,12 @@ export default function Header() {
           <Link to="/">Shopee</Link>
         </h1>
         <Link className="cart-icon" to="/cart">
-          <img src={CartIcon} alt="cart-icon" /> 
+          <img src={CartIcon} alt="cart-icon" />
           <div className="cart-items-count">
             {cartItems.reduce(
               (accumulator, currentItem) => accumulator + currentItem.quantity,
               0
-            )} 
+            )}
           </div>
         </Link>
       </div>
